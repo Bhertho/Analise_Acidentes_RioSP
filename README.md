@@ -22,3 +22,23 @@ Por ser para fins de aprendizado, o notebook estará bastante comentado e bem es
 ### Dados
 
 Link da base de dados: https://dados.gov.br/dados/conjuntos-dados/acidentes-rodovias
+
+## Dicas
+
+Para salvar o seu notebook como pdf ou html, pode-se usar estes comandos:
+
+*Para html, necessário instalar o nbconvert*
+
+**python -m jupyter nbconvert --to html --output meu_relatorio.html arquivo.ipynb**  
+Exporta para html
+
+**python -m jupyter nbconvert --to html --no-input --output meu_relatorio.html arquivo.ipynb**  
+Para não exportar os códigos no html
+
+*Para pdf, também se faz necessário instalar um LaTex instalado, recomendo o MiKTeX*
+
+**python -m jupyter nbconvert --to pdf --output meu_relatorio.pdf arquivo.ipynb**  
+Exporta para pdf
+
+**python -m jupyter nbconvert --to pdf --no-input --output meu_relatorio.pdf arquivo.ipynb**  
+Para não exportar os códigos no pdf
